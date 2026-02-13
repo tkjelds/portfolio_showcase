@@ -6,35 +6,39 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import DarkModeIcon from "./components/DarkModeIcon";
+import { useTranslation } from 'react-i18next';
+
 
 enum Language {
-  EN = "EN",
-  DK = "DK",
+  EN = "en",
+  DK = "dk",
 }
 
-enum MenuKeys {
+enum MenuKey {
   ABOUT,
   PROJECTS ,
   CONTACT,
 }
 
 interface IMenuItem {
-  key : MenuKeys;
+  key : MenuKey;
   label : string;
   component : JSX.Element;
 }
 
-const MenuItems : IMenuItem[] = [
-  { key: MenuKeys.ABOUT, label: "About", component: <About /> },
-  { key: MenuKeys.PROJECTS, label: "Projects", component: <Projects /> },
-  { key: MenuKeys.CONTACT, label: "Contact", component: <Contact /> },
-];
 
 export function App() {
   
-  const [active, setActive] = useState<MenuKeys>(MenuKeys.ABOUT);
+  const [active, setActive] = useState<MenuKey>(MenuKey.ABOUT);
   const [darkMode, setDarkMode] = useState(false);
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState<Language>(Language.EN);
+  const { t, i18n } = useTranslation();
+  
+  const MenuItems : IMenuItem[] = [
+    { key: MenuKey.ABOUT, label: t("About"), component: <About /> },
+    { key: MenuKey.PROJECTS, label: t("Projects"), component: <Projects /> },
+    { key: MenuKey.CONTACT, label: t("Contact"), component: <Contact /> },
+  ];
   
   useEffect(() => {
     const root = document.documentElement;
@@ -45,13 +49,17 @@ export function App() {
     }
   }, [darkMode]);
 
+  useEffect(() => {
+    i18n.changeLanguage(language);
+  }, [language, i18n]);
+
   return (
   <div className="app">
     <button className="darkmode_toggle" onClick={() => setDarkMode(!darkMode)} >
       <DarkModeIcon mode={darkMode ? "dark" : "light"} />
     </button>
     <button className="language_toggle" onClick={() => setLanguage(language === Language.EN ? Language.DK : Language.EN)}>
-      {language === Language.EN ? "DK" : "EN"}
+      {language === Language.EN ? "EN" : "DK"}
     </button>
     <div className="content"> 
       <div className="left">

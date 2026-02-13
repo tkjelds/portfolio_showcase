@@ -6,6 +6,7 @@
  */
 
 import { StrictMode } from "react";
+import "./i18n.ts";
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
 
