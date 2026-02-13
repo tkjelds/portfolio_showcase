@@ -9,6 +9,7 @@
     "start": "NODE_ENV=production bun src/index.ts"
   },
   "dependencies": {
+    "i18next": "^25.8.7",
     "react": "^19",
     "react-dom": "^19"
   },

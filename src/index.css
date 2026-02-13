@@ -1,9 +1,39 @@
+:root {
+  --menu-border: rgba(255, 255, 255, 0.4);
+  --menu-border-hover: rgba(255, 255, 255, 0.7);
+  --menu-bg: rgba(255, 255, 255, 0.08);
+  --menu-bg-hover: rgba(255, 255, 255, 0.15);
+  --menu-focus-ring: rgba(255, 255, 255, 0.35);
+  --background: #f7f7f8;
+  --text: #1c1c1e;
+}
+
+[data-theme="dark"] {
+  --menu-border: rgba(255, 255, 255, 0.2);
+  --menu-border-hover: rgba(255, 255, 255, 0.45);
+  --menu-bg: rgba(255, 255, 255, 0.06);
+  --menu-bg-hover: rgba(255, 255, 255, 0.12);
+  --menu-focus-ring: rgba(255, 255, 255, 0.25);
+  --background: #0f1115;
+  --text: #e7e7ea;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+}
+
 .app {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
+  transition: color 0.25s ease, background-color 0.25s ease;
 }
 
 .content {
@@ -19,7 +49,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 12rem;
   gap: 1rem;
 }
 
@@ -33,9 +62,53 @@
 }
 
 .menu_item {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: 0;
+  background: transparent;
   cursor: pointer;
-  position: relative;
-  transition: all 0.3s ease;
+  color: var(--text);
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
+.menu_item:hover {
+  transform: translateX(8px);
+  border-color: var(--menu-border-hover);
+}
+
+.menu_item:focus-visible {
+  box-shadow: 0 0 0 3px var(--menu-focus-ring);
+}
+
+.darkmode_toggle {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background: var(--menu-bg);
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language_toggle {
+  position: fixed;
+  top: 1.5rem;
+  right: 5.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  background: var(--menu-bg);
+  color: var(--text);
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.language_toggle:hover {
+  transform: translateY(-1px);
+  background: var(--menu-bg-hover);
+  border-color: var(--menu-border-hover);
+}
