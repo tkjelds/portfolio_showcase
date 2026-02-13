@@ -1,7 +1,7 @@
 # Docker
 Build image.
 ```zsh
-Docker build .
+Docker build -t portfolio.
 ```
 Run container linking port from docker port 3000 to pc port 8080.
 ```zsh
