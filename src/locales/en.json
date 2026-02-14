@@ -2,5 +2,29 @@
   "Projects": "Projects",
   "About": "About",
   "Contact": "Contact",
-  "test": "This is a test"
+  "test": "This is a test",
+  "section": {
+    "about": {
+      "title": "Software Developer with passion for maintainable code",
+      "description": "Ea fugiat nisi proident Lorem aute nisi esse sunt sit eiusmod nulla officia nostrud adipisicing. Et cupidatat duis ad sint cupidatat ut sit. Magna eiusmod cupidatat irure do ut esse."
+    },
+    "projects": {
+      "scooterSharing": {
+        "title": "Scooter Sharing App",
+        "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
+      },
+      "minitwit": {
+        "title": "Twitter clone with automated deployment and monitoring",
+        "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
+      },
+      "personalPortfolio": {
+        "title": "Personal Portfolio",
+        "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
+      }
+    },
+    "contact": {
+      "title": "Contact Me",
+      "description": "Pariatur nostrud non consequat velit proident eiusmod officia sit enim cupidatat culpa aliquip et. Laboris labore cupidatat ad amet irure veniam laborum incididunt. Anim adipisicing nisi ullamco duis magna sit irure nulla ut magna aliquip."
+    }
+  }
 }
