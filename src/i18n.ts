@@ -9,7 +9,7 @@ i18n
   .use(initReactI18next)
   .init({
   lng: "en",
-  fallbackLng: "en",
+  fallbackLng: systemLocale.startsWith("da") ? "dk" : "en",
   resources: {
     en: { translation: enTranslation },
     dk: { translation: dkTranslation },

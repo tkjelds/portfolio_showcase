@@ -59,7 +59,7 @@ export function App() {
       <DarkModeIcon mode={darkMode ? "dark" : "light"} />
     </button>
     <button className="language_toggle" onClick={() => setLanguage(language === Language.EN ? Language.DK : Language.EN)}>
-      {language === Language.EN ? "EN" : "DK"}
+      {language}
     </button>
     <div className="content"> 
       <div className="left">
