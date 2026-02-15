@@ -36,8 +36,8 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/bun-app:latest
-            docker stop bun-app || true
-            docker rm bun-app || true
+            docker stop portfolio || true
+            docker rm portfolio || true
             docker run -d \
               -p 80:3000 \
               --name portfolio \
