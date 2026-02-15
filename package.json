@@ -17,9 +17,11 @@
     "i18next": "^25.8.7",
     "install": "^0.13.0",
     "jiti": "^2.6.1",
+    "postprocessing": "^6.36.0",
     "react": "^19",
     "react-dom": "^19",
-    "react-i18next": "^16.5.4"
+    "react-i18next": "^16.5.4",
+    "three": "^0.167.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

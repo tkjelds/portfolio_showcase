@@ -1,7 +1,7 @@
 import "./index.css";
-
+//import "./themes/theme-brutalist.css";
 import { useState, useEffect, type JSX, Suspense } from "react";
-
+import PixelBlast from "./components/PixelBlast";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
@@ -72,11 +72,28 @@ export function App() {
 
   return (
     <Suspense>
-      <style>
-        @import
-        url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-      </style>
       <div className="app">
+        <div style={{ width: "100%", height: "100%", position: "absolute" }}>
+          <PixelBlast
+            className="pixelblast"
+            variant="square"
+            pixelSize={4}
+            patternScale={2}
+            patternDensity={1}
+            pixelSizeJitter={0}
+            enableRipples
+            rippleSpeed={0.4}
+            rippleThickness={0.12}
+            rippleIntensityScale={1.5}
+            liquid={false}
+            liquidStrength={0.12}
+            liquidRadius={1.2}
+            liquidWobbleSpeed={5}
+            speed={0.5}
+            edgeFade={0.25}
+            transparent
+          />
+        </div>
         <button
           className="darkmode_toggle"
           onClick={() =>

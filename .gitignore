@@ -1,3 +1,6 @@
+#Experimental themes
+/src/themes/*
+
 # Logs
 logs
 *.log

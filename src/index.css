@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap");
+
 :root {
   /* Rose Pine Dawn inspired palette */
   --menu-border: rgba(144, 140, 170, 0.35);
@@ -26,6 +28,7 @@ body {
 }
 
 body {
+  font-family: "Public Sans", "Neue Haas Grotesk", sans-serif;
   margin: 0;
   background: var(--background);
   color: var(--text);
@@ -51,12 +54,12 @@ body {
 }
 
 .left {
+  position: relative;
   flex-basis: 25%;
   display: flex;
   padding-left: 5rem;
   padding-bottom: 3rem;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   gap: 1rem;
 }
@@ -64,12 +67,11 @@ body {
 .left::before {
   content: "";
   display: flex;
-  position: relative;
+  position: absolute;
   width: 5rem;
   height: 5rem;
-  top: 351px;
-  left: -50px;
-  background: transparent;
+  bottom: 0;
+  left: 0;
   border-bottom: var(--menu-border-hover) solid 10px;
   border-left: var(--menu-border-hover) solid 10px;
   border-radius: 5%;
@@ -80,16 +82,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--background);
   position: relative;
   overflow: visible;
 }
-
+.pixelblast {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  color: red;
+}
 .right::before {
   content: "";
   display: flex;
   position: absolute;
-
   top: -100px;
   left: 0px;
   width: 125px;
@@ -137,7 +143,7 @@ body {
 }
 
 .menu_item {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   border: 0;
@@ -343,6 +349,17 @@ body {
 }
 
 @media (max-width: 720px) {
+  .right::before {
+    top: -25px;
+  }
+
+  .right::after {
+    bottom: -30px;
+  }
+
+  .left::before {
+    border: none;
+  }
   .app {
     align-items: flex-start;
   }
@@ -361,6 +378,7 @@ body {
     align-items: center;
     text-align: center;
     gap: 0.75rem;
+    margin-bottom: 5rem;
   }
 
   .menu_item,
