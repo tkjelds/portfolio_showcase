@@ -33,6 +33,7 @@ jobs:
           host: ${{ secrets.DROPLET_HOST }}
           username: ${{ secrets.DROPLET_USER }}
           key: ${{ secrets.DROPLET_SSH_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/bun-app:latest
             docker stop bun-app || true
