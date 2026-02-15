@@ -35,7 +35,7 @@ jobs:
           key: ${{ secrets.DROPLET_SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/bun-app:latest
+            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest
             docker stop portfolio || true
             docker rm portfolio || true
             docker run -d \
