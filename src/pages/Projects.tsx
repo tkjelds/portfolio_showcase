@@ -40,6 +40,7 @@ export default function Projects() {
           rewind: true,
           speed: 1250,
           rewindbydrag: true,
+          click: false,
         }}
       >
         {projects.map((project, index) => (

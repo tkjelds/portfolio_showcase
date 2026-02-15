@@ -1,16 +1,17 @@
 import "./index.css";
 
-import { useState, useEffect, type JSX } from "react";
+import { useState, useEffect, type JSX, Suspense } from "react";
 
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import DarkModeIcon from "./components/DarkModeIcon";
 import { useTranslation } from "react-i18next";
+import Name_svg from "./components/NameSVG";
 
 enum Language {
-  EN = "en",
-  DK = "dk",
+  EN = "EN",
+  DK = "DK",
 }
 
 enum MenuKey {
@@ -70,44 +71,51 @@ export function App() {
   }, [active]);
 
   return (
-    <div className="app">
-      <button
-        className="darkmode_toggle"
-        onClick={() =>
-          setTheme(theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT)
-        }
-      >
-        <DarkModeIcon theme={theme} />
-      </button>
-      <button
-        className="language_toggle"
-        onClick={() =>
-          setLanguage(language === Language.EN ? Language.DK : Language.EN)
-        }
-      >
-        {language}
-      </button>
-      <div className="content">
-        <div className="left">
-          {MenuItems.map((item) => (
-            <button
-              key={item.key}
-              className={`menu_item${item.key === active ? " menu_item--active" : ""}`}
-              onClick={() => setActive(item.key)}
-            >
-              {item.label}
-            </button>
-          ))}
-        </div>
-        <div className="right">
-          {activeItem && (
-            <div key={activeItem.key} className="view_transition">
-              {activeItem.component}
-            </div>
-          )}
+    <Suspense>
+      <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+      </style>
+      <div className="app">
+        <button
+          className="darkmode_toggle"
+          onClick={() =>
+            setTheme(theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT)
+          }
+        >
+          <DarkModeIcon theme={theme} />
+        </button>
+        <button
+          className="language_toggle"
+          onClick={() =>
+            setLanguage(language === Language.EN ? Language.DK : Language.EN)
+          }
+        >
+          {language}
+        </button>
+        <div className="content">
+          <div className="left">
+            {Name_svg()}
+            {MenuItems.map((item) => (
+              <button
+                key={item.key}
+                className={`menu_item${item.key === active ? " menu_item--active" : ""}`}
+                onClick={() => setActive(item.key)}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+          <div className="right">
+            {activeItem && (
+              <div key={activeItem.key} className="view_transition">
+                {activeItem.component}
+              </div>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </Suspense>
   );
 }
 
