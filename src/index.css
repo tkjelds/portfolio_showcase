@@ -9,7 +9,6 @@
   --menu-focus-ring: rgba(196, 167, 231, 0.55);
   --background: #faf4ed;
   --text: #575279;
-  --project-card-bg: rgba(255, 250, 243, 0.82);
 }
 
 [data-theme="dark"] {
@@ -21,7 +20,6 @@
   --menu-focus-ring: rgba(235, 188, 186, 0.5);
   --background: #1f1d2e;
   --text: #e0def4;
-  --project-card-bg: rgba(31, 29, 46, 0.72);
 }
 
 html,
@@ -369,6 +367,7 @@ body {
 /* Project card styles */
 .project_card {
   width: min(70%);
+  max-width: 720px;
   height: auto;
   display: flex;
   min-height: 400px;
@@ -378,10 +377,10 @@ body {
   gap: 0.5rem;
   padding: 1.75rem 2rem;
   border-radius: 1rem;
-  background: var(--project-card-bg, var(--menu-bg));
+  background: var(--menu-bg);
   border: 1px solid var(--menu-border);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(4px);
+  opacity: 0.9;
 }
 
 .project_card,
@@ -420,6 +419,7 @@ body {
 
 .projects {
   width: 100%;
+  max-width: 900px;
   display: flex;
   justify-content: center;
   align-items: center;

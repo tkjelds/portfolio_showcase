@@ -40,6 +40,11 @@ export default function Projects() {
       repositoryUrl: repos.mctssimulation.link,
       imageUrls: repos.mctssimulation.imagesURL,
     },
+    {
+      title: i18n.t("section.projects.strandbeest.title"),
+      description: i18n.t("section.projects.strandbeest.description"),
+      imageUrls: repos.strandbeest.imagesURL,
+    },
   ];
   return (
     <div className="projects">
@@ -82,9 +87,16 @@ export default function Projects() {
                 ))}
               </Splide>
               <p>{project.description}</p>
-              <button className="repository_button">
-                {i18n.t("Repository")}
-              </button>
+              {project.repositoryUrl && (
+                <button
+                  className="repository_button"
+                  onClick={() =>
+                    window.open(project.repositoryUrl || "", "_blank")
+                  }
+                >
+                  {i18n.t("Repository")}
+                </button>
+              )}
             </div>
           </SplideSlide>
         ))}

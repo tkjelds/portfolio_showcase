@@ -6,7 +6,7 @@
   "section": {
     "about": {
       "title": "Software Engineer",
-      "description": "Ea fugiat nisi proident Lorem aute nisi esse sunt sit eiusmod nulla officia nostrud adipisicing. Et cupidatat duis ad sint cupidatat ut sit. Magna eiusmod cupidatat irure do ut esse."
+      "description": "A soon-to-be newly graduated software engineer with an MSc in Computer Science from the IT University of Copenhagen. My focus areas are maintainable, scalable code that doesn’t give you headaches or sore eyes. I my opinion, nothing is more fun than pushing a change and immediately seeing the effect take place on a live server."
     },
     "projects": {
       "scooterSharing": {
@@ -24,11 +24,15 @@
       "mctssimulation": {
         "title": "Monte Carlo Tree Search simulation in stochastic environments",
         "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
+      },
+      "strandbeest": {
+        "title": "Bluetooth controlled 3d-printed Strandbeest, with native app for IOS",
+        "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
       }
     },
     "contact": {
       "title": "Contact Me",
-      "description": "Pariatur nostrud non consequat velit proident eiusmod officia sit enim cupidatat culpa aliquip et. Laboris labore cupidatat ad amet irure veniam laborum incididunt. Anim adipisicing nisi ullamco duis magna sit irure nulla ut magna aliquip."
+      "description": "I am always open to opportunities, so you are more than welcome to contact me by email or via LinkedIn. Additionally, you can also find me on GitHub, where I have several of my projects available."
     }
   }
 }

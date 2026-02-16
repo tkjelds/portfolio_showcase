@@ -6,7 +6,7 @@
   "section": {
     "about": {
       "title": "Software Ingeniør",
-      "description": "Ea fugiat nisi proident Lorem aute nisi esse sunt sit eiusmod nulla officia nostrud adipisicing. Et cupidatat duis ad sint cupidatat ut sit. Magna eiusmod cupidatat irure do ut esse."
+      "description": "En snart nyudannet software ingeniør, med en Msc. I computer science fra IT-Universitetet i København. Mine fokus områder er maintainable skalerbar kode, man ikke får hovedpinde og ondt i øjene af at kigge på. For mig er der intet sjovere end at pushe et commit og se effekten på en live server."
     },
     "projects": {
       "scooterSharing": {
@@ -24,11 +24,15 @@
       "mctssimulation": {
         "title": "Monte Carlo Tree Search simulation i stokastiske miljøer",
         "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
+      },
+      "strandbeest": {
+        "title": "Bluetooth fjernstyret 3d-printed Strandbeest, med app til IOS",
+        "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
       }
     },
     "contact": {
       "title": "Kontakt Mig",
-      "description": "Pariatur nostrud non consequat velit proident eiusmod officia sit enim cupidatat culpa aliquip et. Laboris labore cupidatat ad amet irure veniam laborum incididunt. Anim adipisicing nisi ullamco duis magna sit irure nulla ut magna aliquip."
+      "description": "Jeg er altid åben for muligheder, så i er mere end velkommen til at kontakte mig på mail, eller via LinkedIn. Derudover kan i også finde mig på GitHub, hvor jeg har en del af mine projekter liggende."
     }
   }
 }
