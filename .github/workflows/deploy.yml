@@ -39,7 +39,7 @@ jobs:
             docker stop portfolio || true
             docker rm portfolio || true
             docker run -d \
-              -p 80:3000 \
+              -p 8080:3000 \
               --name portfolio \
               --restart always \
               ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest
