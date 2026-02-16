@@ -46,8 +46,11 @@ export function App() {
   );
 
   const rippleColors = {
-    [Theme.DARK]: "#fff",
-    [Theme.LIGHT]: "#000",
+    [Theme.DARK]: "#F4DBD6",
+    //[Theme.DARK]: "#C4A7E7",
+    //[Theme.LIGHT]: "#C996F4",
+    //[Theme.LIGHT]: "#B383E8",
+    [Theme.LIGHT]: "#b4637a",
   };
 
   const { t, i18n } = useTranslation();
@@ -87,21 +90,11 @@ export function App() {
           <PixelBlast
             className="pixelblast"
             color={rippleColor}
-            variant="square"
-            pixelSize={4}
-            patternScale={2}
+            pixelSize={3}
+            patternScale={3}
             patternDensity={1}
-            pixelSizeJitter={0}
-            enableRipples
-            rippleSpeed={0.4}
-            rippleThickness={0.12}
-            rippleIntensityScale={1.5}
-            liquid={false}
-            liquidStrength={0.12}
-            liquidRadius={1.2}
-            liquidWobbleSpeed={5}
-            speed={0.5}
-            edgeFade={0.25}
+            speed={0.2}
+            edgeFade={0.1}
             transparent
           />
         </div>
