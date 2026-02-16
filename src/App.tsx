@@ -41,6 +41,14 @@ export function App() {
   const [language, setLanguage] = useState<Language>(
     (localStorage.getItem("language") as Language) || Language.EN,
   );
+  const [rippleColor, setRippleColor] = useState<string>(
+    theme === Theme.DARK ? "#fff" : "#000",
+  );
+
+  const rippleColors = {
+    [Theme.DARK]: "#fff",
+    [Theme.LIGHT]: "#000",
+  };
 
   const { t, i18n } = useTranslation();
   const MenuItems: IMenuItem[] = [
@@ -55,9 +63,11 @@ export function App() {
     if (theme === Theme.DARK) {
       root.setAttribute("data-theme", "dark");
       localStorage.setItem("theme", theme);
+      setRippleColor(rippleColors[theme]);
     } else {
       root.removeAttribute("data-theme");
       localStorage.setItem("theme", Theme.LIGHT);
+      setRippleColor(rippleColors[theme]);
     }
   }, [theme]);
 
@@ -76,6 +86,7 @@ export function App() {
         <div style={{ width: "100%", height: "100%", position: "absolute" }}>
           <PixelBlast
             className="pixelblast"
+            color={rippleColor}
             variant="square"
             pixelSize={4}
             patternScale={2}
