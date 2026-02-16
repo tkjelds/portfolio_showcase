@@ -1,4 +1,5 @@
 {
+  "Repository": "Repository",
   "Projects": "Projects",
   "About": "About",
   "Contact": "Contact",
@@ -18,6 +19,10 @@
       },
       "personalPortfolio": {
         "title": "Personal Portfolio",
+        "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
+      },
+      "mctssimulation": {
+        "title": "Monte Carlo Tree Search simulation in stochastic environments",
         "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
       }
     },
