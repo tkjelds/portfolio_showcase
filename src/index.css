@@ -63,19 +63,6 @@ body {
   gap: 1rem;
 }
 
-.left::before {
-  content: "";
-  display: flex;
-  position: absolute;
-  width: 5rem;
-  height: 5rem;
-  bottom: 0;
-  left: 0;
-  border-bottom: var(--menu-border-hover) solid 10px;
-  border-left: var(--menu-border-hover) solid 10px;
-  border-radius: 5%;
-}
-
 .right {
   flex-basis: 75%;
   display: flex;
@@ -92,33 +79,43 @@ body {
   z-index: 0;
   color: red;
 }
+
+.left::before,
+.right::after,
 .right::before {
   content: "";
   display: flex;
   position: absolute;
-  top: -50px;
-  left: 0px;
+  z-index: 0;
+  pointer-events: none;
   width: 125px;
   height: 125px;
-  background: transparent;
+  opacity: 60%;
+  border-radius: 5%;
+}
+
+.left::before {
+  width: 5rem;
+  height: 5rem;
+  bottom: 0;
+  left: 0;
+  border-bottom: var(--menu-border-hover) solid 10px;
+  border-left: var(--menu-border-hover) solid 10px;
+}
+
+.right::before {
+  top: -50px;
+  left: 0px;
   border-top: var(--menu-border-hover) solid 10px;
   border-left: var(--menu-border-hover) solid 10px;
-  border-radius: 5%;
   z-index: 1;
 }
 
 .right::after {
-  content: "";
-  display: flex;
-  position: absolute;
   bottom: -50px;
   right: 0px;
-  width: 125px;
-  height: 125px;
-  background: transparent;
   border-bottom: var(--menu-border-hover) solid 10px;
   border-right: var(--menu-border-hover) solid 10px;
-  border-radius: 5%;
   z-index: 1;
 }
 
@@ -426,12 +423,6 @@ body {
 .projects .splide {
   pointer-events: all;
   width: 100%;
-}
-
-@media (max-width: 2500px) {
-  .content * {
-    width: auto;
-  }
 }
 
 @media (max-width: 960px) {
