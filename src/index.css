@@ -300,8 +300,8 @@ body {
 }
 
 .contact_container {
-  width: 100%;
-  max-width: 60rem;
+  width: 70%;
+  /* max-width: 60rem; */
   min-height: 250px;
   display: flex;
   padding: 2rem 2.5rem;
@@ -361,8 +361,7 @@ body {
 
 /* Project card styles */
 .project_card {
-  width: 60%;
-  max-width: 40rem;
+  width: 80%;
   height: auto;
   display: flex;
   min-height: 400px;

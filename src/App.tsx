@@ -47,9 +47,6 @@ export function App() {
 
   const rippleColors = {
     [Theme.DARK]: "#85334b",
-    //[Theme.DARK]: "#C4A7E7",
-    //[Theme.LIGHT]: "#C996F4",
-    //[Theme.LIGHT]: "#B383E8",
     [Theme.LIGHT]: "#b4637a",
   };
 
