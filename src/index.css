@@ -2,12 +2,12 @@
 
 :root {
   --menu-border: rgba(144, 140, 170, 0.35);
-  --menu-border-hover: #b4637a;
+  --menu-border-hover: #c88d9c;
   --menu-bg: #fffaf3;
   --menu-bg-hover: #f4ede8;
   --menu-focus-ring: rgba(196, 167, 231, 0.55);
   --background: #faf4ed;
-  --text: #575279;
+  --text: #343443;
 }
 
 [data-theme="dark"] {
