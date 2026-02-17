@@ -692,3 +692,9 @@ body {
   object-position: center;
   opacity: 1;
 }
+
+@media screen and (min-width: 2000px) {
+  .content {
+    width: 80%;
+  }
+}
