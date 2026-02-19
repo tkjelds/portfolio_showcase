@@ -557,6 +557,7 @@ body {
 @media (max-width: 480px) {
   .content {
     padding: 5rem 1rem 2rem;
+    max-width: 380px;
   }
 
   .left {
@@ -580,6 +581,12 @@ body {
   .about_text,
   .project_card p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .content {
+    max-width: 320px;
   }
 }
 
