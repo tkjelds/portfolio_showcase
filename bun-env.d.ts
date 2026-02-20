@@ -15,3 +15,14 @@ declare module "*.module.css" {
   const classes: { readonly [key: string]: string };
   export = classes;
 }
+
+interface ImportMeta {
+  glob<T = unknown>(
+    pattern: string | readonly string[],
+    options?: {
+      eager?: boolean;
+      as?: string;
+      import?: string;
+    },
+  ): Record<string, T>;
+}

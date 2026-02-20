@@ -1,10 +1,8 @@
 // @ts-expect-error: Suppress type error for missing declaration file
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import i18n from "../i18n";
-// Default theme
 import "@splidejs/react-splide/css";
 import repos from "../data/projects.json";
-// or only core styles
 import "@splidejs/react-splide/css/core";
 
 interface IProject {
@@ -78,11 +76,14 @@ export default function Projects() {
               >
                 {project.imageUrls?.map((url, imageIndex) => (
                   <SplideSlide key={imageIndex}>
-                    <img
-                      className="project_image"
-                      src={url}
-                      alt={`${project.title} image ${imageIndex + 1}`}
-                    />
+                    <div className="project_image_container">
+                      <img
+                        className="project_image"
+                        // src={require("../data/projectImages/strandbeest/IOS_app_interface.png")} // Adjust the path as needed
+                        src={url} // Adjust the path as needed
+                        alt={`${project.title} image ${imageIndex + 1}`}
+                      />
+                    </div>
                   </SplideSlide>
                 ))}
               </Splide>
