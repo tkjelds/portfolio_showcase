@@ -6,7 +6,7 @@
   "section": {
     "about": {
       "title": "Software Engineer",
-      "description": "A soon-to-be newly graduated software engineer with an MSc in Computer Science from the IT University of Copenhagen. My focus areas are maintainable, scalable code that doesn’t give you headaches or sore eyes. I my opinion, nothing is more fun than pushing a change and immediately seeing the effect take place on a live server."
+      "description": "A soon-to-be newly graduated software engineer with an MSc in Computer Science from the IT University of Copenhagen. My focus areas are maintainable, scalable code that doesn’t give you headaches or sore eyes. In my opinion, nothing is more fun than pushing a change and immediately seeing the effect take place on a live server."
     },
     "projects": {
       "scooterSharing": {
