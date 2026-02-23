@@ -15,19 +15,19 @@
       },
       "minitwit": {
         "title": "Twitter clone with automated deployment and monitoring",
-        "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
+        "description": "While there is a strong emphasis on learning software development, universities rarely address what happens once the software reaches its users: How is it maintained? How do you scale it for more users? How do you detect and fix issues with minimal downtime? In the DevOps course, we got the chance to deploy a Twitter clone under a growing load of simulated users. Our task was to keep the service running while adding new features. The project gave me a clear insight into what the development process might look like once a system is in production."
       },
       "portfolio": {
         "title": "Personal Portfolio",
-        "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
+        "description": "This website is built with TypeScript and React and is deployed on DigitalOcean using Docker. A CI/CD pipeline runs automatically whenever changes are pushed to the main branch. Through my deployment script, the Docker image is built and pushed to Docker Hub, after which I SSH into my Nginx server to pull the updated image and deploy it."
       },
       "mcts": {
         "title": "Monte Carlo Tree Search simulation in stochastic environments",
-        "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
+        "description": "The project focused on finding the best possible solution in a highly combinatorial environment with stochastic elements that increased the overall complexity. The environment was the four-player card game UNO. The goal was to develop a simulated game engine for UNO and implement a range of agents capable of interacting with the game state. \nThe project combined theoretical knowledge of algorithms and machine learning with solid software engineering principles. It was developed in .NET using C#, following a test-driven development approach with xUnit."
       },
       "strandbeest": {
         "title": "Bluetooth controlled 3d-printed Strandbeest, with native app for IOS",
-        "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
+        "description": "One of the most enjoyable projects I’ve worked on is a 3D-printed Strandbeest that can be controlled through an iOS app. The robot itself is programmed in C, while the app is developed in Swift. The app communicates with the robot via Bluetooth, sending commands to an Arduino board that controls the motors. \nThe project was a great opportunity to combine my interest in both hardware and software."
       }
     },
     "contact": {
