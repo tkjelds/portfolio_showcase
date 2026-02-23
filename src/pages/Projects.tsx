@@ -13,37 +13,14 @@ interface IProject {
 }
 
 export default function Projects() {
-  const projects: IProject[] = [
+  const projects: IProject[] = Object.values(repos).flatMap((project) => [
     {
-      title: i18n.t("section.projects.minitwit.title"),
-      description: i18n.t("section.projects.minitwit.description"),
-      repositoryUrl: repos.minitwit.link,
-      imageUrls: repos.minitwit.imagesURL,
+      title: i18n.t(`section.projects.${project.title}.title`),
+      description: i18n.t(`section.projects.${project.title}.description`),
+      repositoryUrl: project.link,
+      imageUrls: project.imagesURL,
     },
-    {
-      title: i18n.t("section.projects.scooterSharing.title"),
-      description: i18n.t("section.projects.scooterSharing.description"),
-      repositoryUrl: repos.scooterSharing.link,
-      imageUrls: repos.scooterSharing.imagesURL,
-    },
-    {
-      title: i18n.t("section.projects.personalPortfolio.title"),
-      description: i18n.t("section.projects.personalPortfolio.description"),
-      repositoryUrl: repos.personalPortfolio.link,
-      imageUrls: repos.personalPortfolio.imagesURL,
-    },
-    {
-      title: i18n.t("section.projects.mctssimulation.title"),
-      description: i18n.t("section.projects.mctssimulation.description"),
-      repositoryUrl: repos.mctssimulation.link,
-      imageUrls: repos.mctssimulation.imagesURL,
-    },
-    {
-      title: i18n.t("section.projects.strandbeest.title"),
-      description: i18n.t("section.projects.strandbeest.description"),
-      imageUrls: repos.strandbeest.imagesURL,
-    },
-  ];
+  ]);
   return (
     <div className="projects">
       <Splide
@@ -72,6 +49,7 @@ export default function Projects() {
                   click: false,
                   arrows: false,
                   autoplay: true,
+                  focus: "center",
                 }}
               >
                 {project.imageUrls?.map((url, imageIndex) => (
@@ -79,7 +57,6 @@ export default function Projects() {
                     <div className="project_image_container">
                       <img
                         className="project_image"
-                        // src={require("../data/projectImages/strandbeest/IOS_app_interface.png")} // Adjust the path as needed
                         src={url} // Adjust the path as needed
                         alt={`${project.title} image ${imageIndex + 1}`}
                       />

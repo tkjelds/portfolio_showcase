@@ -9,7 +9,7 @@
       "description": "A soon-to-be newly graduated software engineer with an MSc in Computer Science from the IT University of Copenhagen. My focus areas are maintainable, scalable code that doesn’t give you headaches or sore eyes. In my opinion, nothing is more fun than pushing a change and immediately seeing the effect take place on a live server."
     },
     "projects": {
-      "scooterSharing": {
+      "scootersharing": {
         "title": "Scooter Sharing App",
         "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
       },
@@ -17,11 +17,11 @@
         "title": "Twitter clone with automated deployment and monitoring",
         "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
       },
-      "personalPortfolio": {
+      "portfolio": {
         "title": "Personal Portfolio",
         "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
       },
-      "mctssimulation": {
+      "mcts": {
         "title": "Monte Carlo Tree Search simulation in stochastic environments",
         "description": "Id mollit consequat occaecat dolore cillum qui et est quis officia nisi sint excepteur irure. Ullamco et voluptate magna amet occaecat ad cupidatat cupidatat cillum quis consequat. Est proident aute consequat minim eu aliquip sit nisi dolor reprehenderit ex et quis dolor. Magna exercitation occaecat exercitation cillum aliqua in Lorem non consectetur."
       },

@@ -1,5 +1,6 @@
 {
   "minitwit": {
+    "title": "minitwit",
     "link": "https://github.com/tkjelds/DevOops",
     "imagesURL": [
       "https://res.cloudinary.com/dpggfxkbk/image/upload/v1771606722/Screenshot_2026-02-18_at_02.38.16_d9i4gl.png",
@@ -7,18 +8,13 @@
       "https://res.cloudinary.com/dpggfxkbk/image/upload/v1771606702/Grafana_dashboard_pfg65a.png"
     ]
   },
-  "scooterSharing": {
-    "link": "https://github.com/tkjelds/scooter-sharing",
-    "imagesURL": [
-      "https://res.cloudinary.com/dpggfxkbk/image/upload/v1771606854/RoutingAPI_zuaj9d.jpg",
-      "https://res.cloudinary.com/dpggfxkbk/image/upload/v1771606853/HOMEPAGE_SCREEN_vakzlz.png"
-    ]
-  },
   "personalPortfolio": {
+    "title": "portfolio",
     "link": "https://github.com/tkjelds/portfolio_showcase",
     "imagesURL": []
   },
   "mctssimulation": {
+    "title": "mcts",
     "link": "https://github.com/tkjelds/mcts-simulation",
     "imagesURL": [
       "https://res.cloudinary.com/dpggfxkbk/image/upload/v1771606702/BACHELOR_MCTS-MCTS_uj4rk6.jpg",
@@ -26,6 +22,7 @@
     ]
   },
   "strandbeest": {
+    "title": "strandbeest",
     "link": "no-repository",
     "imagesURL": [
       "https://res.cloudinary.com/dpggfxkbk/image/upload/v1771606468/Roboty_jyzmj5.jpg",
