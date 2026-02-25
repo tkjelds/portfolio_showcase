@@ -11,7 +11,10 @@
   "personalPortfolio": {
     "title": "portfolio",
     "link": "https://github.com/tkjelds/portfolio_showcase",
-    "imagesURL": []
+    "imagesURL": [
+      "https://res.cloudinary.com/dpggfxkbk/image/upload/v1771987782/webpage_ta984c.png",
+      "https://res.cloudinary.com/dpggfxkbk/image/upload/v1771987783/webpage2_cjsgkv.png"
+    ]
   },
   "mctssimulation": {
     "title": "mcts",
