@@ -15,7 +15,7 @@
       },
       "minitwit": {
         "title": "Twitter klon, med automatiseret deployment og monitorering",
-        "description": "Der er stort fokus på at lære at udvikle software, men på universitetet stilles der sjældent spørgsmål til, hvad der sker, når softwaren er ude hos brugerne: Hvordan vedligeholder man den? Hvordan skalerer man med flere brugere? Hvordan identificerer og retter man fejl med minimal nedetid? På DevOps-kurset fik vi mulighed for at deploye en Twitter-klon med et stigende antal simulerede brugere. Vores opgave var at holde servicen kørende og implementere nye features. Projektet gav mig indblik i, hvordan udviklingsprocessen ser ud, efter et system er taget i brug."
+        "description": "Der er stort fokus på at lære at udvikle software, men på universitetet stilles der sjældent spørgsmål til, hvad der sker, når softwaren er ude hos brugerne: Hvordan vedligeholder man den? Hvordan skalerer man med flere brugere? Hvordan identificerer og retter man fejl med minimal nedetid? På DevOps-kurset fik vi mulighed for at deploye en Twitter-klon med et stigende antal simulerede brugere. Vores opgave var at holde servicen kørende og implementere nye features. Projektet gav mig indblik og kompentece i, hvordan udviklingsprocessen ser ud, efter et system er taget i brug."
       },
       "portfolio": {
         "title": "Udvikler portfolio hjemmeside",
