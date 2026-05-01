@@ -6,7 +6,7 @@
   "section": {
     "about": {
       "title": "Software Ingeniør",
-      "description": "En snart nyudannet software ingeniør, med en Msc. I computer science fra IT-Universitetet i København. Mine fokus områder er maintainable skalerbar kode, og devops principper som CI/CD. For mig er der intet sjovere end at pushe et commit og se effekten på en live server."
+      "description": "Hej, jeg hedder Tore, og jeg er i gang med at tage en kandidat i datalogi på IT-Universitetet i København, hvor jeg arbejder med AI og softwareudvikling. Mine fokus områder er maintainable skalerbar kode, og devops principper som CI/CD. For mig er der intet sjovere end at pushe et commit og se effekten på en live server."
     },
     "projects": {
       "scootersharing": {

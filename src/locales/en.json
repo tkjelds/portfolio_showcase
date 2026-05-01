@@ -6,7 +6,7 @@
   "section": {
     "about": {
       "title": "Software Engineer",
-      "description": "A soon-to-be newly graduated software engineer with an MSc in Computer Science from the IT University of Copenhagen. My focus areas are maintainable, scalable code along with devops principles like CI/CD. In my opinion, nothing is more fun than pushing a change and immediately seeing the effect take place on a live server."
+      "description": "Hi, my name is Tore, and I am currently pursuing a Master’s degree in Computer Science at the IT University of Copenhagen, where I work with AI and software engineering. My focus areas are maintainable, scalable code along with devops principles like CI/CD. In my opinion, nothing is more fun than pushing a change and immediately seeing the effect take place on a live server."
     },
     "projects": {
       "scootersharing": {
